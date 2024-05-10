@@ -1,0 +1,8 @@
+{
+"default" : {
+"paths" : ["test-cucumberbdd\features"] 
+
+} 
+
+
+}

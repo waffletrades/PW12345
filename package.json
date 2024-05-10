@@ -1,0 +1,34 @@
+{
+  "name": "playwrightautomation_2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:clear": "rm -rf allure-results && rm -rf allure-report && rm -rf test-results",
+    "pretest": "npm run allure:clear",
+    "posttest": "npm run allure:report",
+    "showReport": "npx allure serve allure-results",
+    "googleSearch": "npx playwright test src/test/GoogleSearch.spec.ts --headed --project=chrome --workers=1 --reporter=html",
+    "smokeSuite": "npx playwright test --grep @smoke src/test/* --headed --project=chrome --workers=1 --reporter=html",
+    "runAllFiles": "npx playwright test src/test/* --headed --project=chrome --workers=1 --reporter=html",
+    "googleSearchAllure": "npx playwright test src/test/GoogleSearchAllure.spec.ts --headed --project=chrome --project=firefox --workers=1 --reporter=line,allure-playwright",
+    "googleSearchLoop": "npx playwright test src/test/GoogleSearchLoop.spec.ts --headed --project=chrome --workers=1 --reporter=html",
+    "googleSearchCB": "npx playwright test src/test/GoogleSearchLoop.spec.ts --headed --project=chrome --project=firefox --project=safari --workers=1 --reporter=html",
+    "googleSearchCBParallel": "npx playwright test src/test/GoogleSearchLoop.spec.ts --headed --project=chrome --project=firefox --project=safari --workers=3 --reporter=html",
+    "BestBuySearch": "npx playwright test src/test/BestBuySearch.spec.ts --headed --project=chrome --project=firefox --project=safari --workers=3 --reporter=html",
+    "noteTakerApi": "npx playwright test src/test/NoteTakerAPI.spec.ts --project=chrome --workers=1 --reporter=html",
+    "CVS": "npx playwright test src/test/CVS.spec.ts --headed --project=chrome --workers=1 --reporter=html",
+    "NissanUSA": "npx playwright test src/test/NissanUSA.spec.ts --headed --project=chrome --project=firefox --project=safari --workers=3 --reporter=html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.9.0",
+    "allure-commandline": "^2.27.0",
+    "allure-playwright": "^2.13.0",
+    "cucumber": "^6.0.7"
+  }
+}
