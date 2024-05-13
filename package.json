@@ -18,7 +18,6 @@
     "googleSearchCBParallel": "npx playwright test src/test/GoogleSearchLoop.spec.ts --headed --project=chrome --project=firefox --project=safari --workers=3 --reporter=html",
     "BestBuySearch": "npx playwright test src/test/BestBuySearch.spec.ts --headed --project=chrome --project=firefox --project=safari --workers=3 --reporter=html",
     "noteTakerApi": "npx playwright test src/test/NoteTakerAPI.spec.ts --project=chrome --workers=1 --reporter=html",
-    "CVS": "npx playwright test src/test/CVS.spec.ts --headed --project=chrome --workers=1 --reporter=html",
     "NissanUSA": "npx playwright test src/test/NissanUSA.spec.ts --headed --project=chrome --project=firefox --project=safari --workers=3 --reporter=html"
   },
   "keywords": [],

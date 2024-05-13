@@ -10,7 +10,7 @@ test.beforeAll(async ({ browser }) => {
 })
 
 //seatch for bmw 
-test("Search for BMW on Search Field", async () => {
+test("Search for BMW on Search Field @smoke", async () => {
     //navigate to google
     await page.goto("https://www.google.com")
     //wait a few seconds
@@ -23,7 +23,7 @@ test("Search for BMW on Search Field", async () => {
 })//end of test 1
 
 //capture the search result 
-test("Capture the search number for BMW", async () => {
+test("Capture the search number for BMW @smoke ", async () => {
     //wait few seconds
     await page.waitForTimeout(3000)
     //store the search results text in a variable 
