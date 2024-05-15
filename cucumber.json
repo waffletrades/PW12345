@@ -1,7 +1,16 @@
 {
 "default" : {
-"paths" : ["test-cucumberbdd\features"] 
-
+    "formatOptions": {
+"snippetInterface": "async-await"
+    },
+"paths" : [
+    "src/BDD/features/"
+],
+"publishQuiet": true,
+        "dryRun": true,
+        "require":["src/BDD/steps/ts"]
+        
+        
 } 
 
 
