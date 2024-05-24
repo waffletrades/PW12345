@@ -20,6 +20,8 @@
     "noteTakerApi": "npx playwright test src/test/NoteTakerAPI.spec.ts --project=chrome --workers=1 --reporter=html",
     "NissanUSA": "npx playwright test src/test/NissanUSA.spec.ts --headed --project=chrome --project=firefox --project=safari --workers=3 --reporter=html",
     "bddTest": "cucumber-js test"
+    
+    
   },
   "keywords": [],
   "author": "",
@@ -28,7 +30,7 @@
     "@cucumber/cucumber": "^10.7.0",
     "@playwright/test": "^1.42.1",
     "@types/node": "^20.9.0",
-    "allure-commandline": "^2.27.0",
+    "allure-commandline": "^2.29.0",
     "allure-playwright": "^2.13.0",
     "cucumber": "^6.0.7",
     "ts-node": "^10.9.2"
