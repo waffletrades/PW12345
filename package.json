@@ -19,9 +19,8 @@
     "BestBuySearch": "npx playwright test src/test/BestBuySearch.spec.ts --headed --project=chrome --project=firefox --project=safari --workers=3 --reporter=html",
     "noteTakerApi": "npx playwright test src/test/NoteTakerAPI.spec.ts --project=chrome --workers=1 --reporter=html",
     "NissanUSA": "npx playwright test src/test/NissanUSA.spec.ts --headed --project=chrome --project=firefox --project=safari --workers=3 --reporter=html",
-    "bddTest": "cucumber-js test"
-    
-    
+    "signatureAviation": "npx playwright test src/test/signatureAviation.spec.ts --headed --project=chrome --project=firefox --project=safari --workers=3 --reporter=html",
+    "sampleTest": "npx playwright test src/test/sampleTest.spec.ts --headed --project=chrome --project=firefox --workers=1 --reporter=line,allure-playwright"
   },
   "keywords": [],
   "author": "",
@@ -33,6 +32,7 @@
     "allure-commandline": "^2.29.0",
     "allure-playwright": "^2.13.0",
     "cucumber": "^6.0.7",
+    "rimraf": "^5.0.7",
     "ts-node": "^10.9.2"
   }
 }

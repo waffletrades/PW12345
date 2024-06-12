@@ -74,6 +74,21 @@ export async function selectByText(page: Page, xpath: string, visibleText: strin
     });
 }
 
+//create a method to select an option from a dropdown by value 
+export async function selectByValue(page: Page, xpath: string, value: string, elementName: string) {
+    await allure.step("Select by value '" + value + "' from " + elementName, async () => {
+        await page.locator(xpath).selectOption({ value });
+    });
+}
+
+//create a method to select an options from dropdown by index number 
+export async function selectByIndex(page: Page, xpath: string, index: number, elementName: string) {
+    await allure.step("Select by index '" + index + "' from " + elementName, async () => {
+        await page.locator(xpath).selectOption({ index });
+    });
+}
+
+
 //create a method to verify that specific element is displayed on the page
 export async function verifyElementPresent(page: Page, xpath: string, elementName: string) {
     await allure.step("Verify " + elementName + " is present", async () => {

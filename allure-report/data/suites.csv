@@ -1,6 +1,3 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Tue Apr 02 15:10:46 EDT 2024","Tue Apr 02 15:11:17 EDT 2024","31067","safari","test\CVS.spec.ts","","","","test",""
-"broken","Tue Apr 02 15:10:46 EDT 2024","Tue Apr 02 15:11:18 EDT 2024","32019","firefox","test\CVS.spec.ts","","","","test",""
-"broken","Tue Apr 02 15:10:46 EDT 2024","Tue Apr 02 15:11:18 EDT 2024","32052","chrome","test\CVS.spec.ts","","","","test",""
-"passed","Sat May 11 11:47:23 EDT 2024","Sat May 11 11:47:26 EDT 2024","2889","chrome","test\GoogleSearchAllure.spec.ts","","","","Search for BMW on Search Field",""
-"passed","Sat May 11 11:47:27 EDT 2024","Sat May 11 11:47:33 EDT 2024","5561","firefox","test\GoogleSearchAllure.spec.ts","","","","Search for BMW on Search Field",""
+"passed","Tue May 28 10:56:09 EDT 2024","Tue May 28 10:56:21 EDT 2024","12860","firefox","test\sampleTest.spec.ts","","","","search for multiple cities",""
+"passed","Tue May 28 10:55:59 EDT 2024","Tue May 28 10:56:08 EDT 2024","9027","chrome","test\sampleTest.spec.ts","","","","search for multiple cities",""
